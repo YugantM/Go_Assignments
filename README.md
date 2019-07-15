@@ -1,2 +1,2 @@
 # Go_Tutorials
-Content example programs of golang
+Contents example programs of golang
