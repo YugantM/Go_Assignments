@@ -1,2 +1,2 @@
-# Go_Tutorials
+# Go Assignments
 Contents example programs of golang
