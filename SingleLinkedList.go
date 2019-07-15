@@ -26,7 +26,7 @@ func main() {
 	fmt.Scan(&temp)
 	head.val = temp 
 	
-	//secondary pointer pointing to the head node
+	//pointer pointing to the head node
 	pin = &head
 	
 	//loop for adding nodes 
@@ -47,7 +47,7 @@ func main() {
 	}
 
 	fmt.Println("Printing the linked list")
-	//loop starts with pin(secondary node) set to the head node, loop prints the value of the node untill the next of the node is pointing to nil
+	//loop starts with pin(pointer) set to the head node, loop prints the value of the node untill the next of the node is pointing to nil
 	fmt.Print(" | ")
 	for pin = &head; pin != nil; pin=pin.next {
 		fmt.Print(pin.val," | ")
