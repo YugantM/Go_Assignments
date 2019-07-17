@@ -29,7 +29,7 @@ func main() {
 
 	//pointer pointing to the head node
 	pin = &head
-
+  fmt.Println("---printing head::---\n)
 	//loop for adding nodes
 	for index := 1; index < number; index++ {
 
@@ -37,11 +37,11 @@ func main() {
 		if(index!=number){
 
     pin.previous = pin
-    //tail = *pin
-    pin.next = (new(node)
-    fmt.Println("prev:",pin.previous,"val",pin.val,"next:",pin.next,&tail)
+    tail = *pin
+    pin.next = new(node)
     // if not on last number, allocating new node to the next of the current one
-		}else{
+
+  	}else{
 		pin.next = nil	      // if yes allocate nil to the next of the last node
 		}
 
@@ -49,7 +49,7 @@ func main() {
 		pin = pin.next
 		fmt.Scan(&temp)
 		pin.val = temp
-
+    fmt.Println("prev:",pin.previous,"\nval",pin.val,"\nnext:",pin.next,"\ntail\n\n:",&tail,"\n\n")
 	}
 
 /*  tail = pin.previous
