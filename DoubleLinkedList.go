@@ -30,7 +30,8 @@ func main() {
     pin = pin.next
     pin.previous = temp
   }
-    tail := pin
+
+  tail := pin
 
 	fmt.Println("\n\n----Printing the forward linked list----\n")
 	//loop starts with pin(pointer) set to the head node, loop prints the value of the node untill the next of the node is pointing to nil
