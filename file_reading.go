@@ -2,6 +2,7 @@ package main
 
 import("fmt"
        "io/ioutil"
+       "strings"
        )
 
 func main(){
@@ -11,6 +12,8 @@ func main(){
           fmt.Println("File reading error", err)
           return
       }
-      fmt.Println("Contents of file:", string(data))
+      //fmt.Println("Contents of file:", string(data))
 
+      rows:= strings.Split(string(data),"\n")
+      fmt.Println("\n\nContents of file:", rows[1])
 }
