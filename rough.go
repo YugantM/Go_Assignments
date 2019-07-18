@@ -24,11 +24,16 @@ func (f *frame) Init(file_name string){
     f.data = rows[1:]
 }
 
+func (f *frame) Head() string {
+
+return strings.Join(f.head,",")
+}
+
 func main(){
 fmt.Println("fmt used!")
 df := new(frame)
 df.Init("text.txt")
 
-fmt.Println("Head:",df.head[0],"\nData:",df.data[1])
+fmt.Println("Head:",df.Head(),"\nData:",df.data[1])
 
 }
