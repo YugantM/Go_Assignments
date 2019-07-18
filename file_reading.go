@@ -3,7 +3,6 @@ package main
 import("fmt"
        "io/ioutil"
        "strings"
-      // "./frame"
        )
 
 func main(){
@@ -16,7 +15,8 @@ func main(){
       //fmt.Println("Contents of file:", string(data))
 
       rows:= strings.Split(string(data),"\n")
-      fmt.Println("\n\nContents of file:", rows[1])
+      line:= strings.Split(string(rows[1]),",")
+      fmt.Println("\n\nContents of file:", line[0])
 /*
       y := frame.Demo{}
       y.Val = 78
