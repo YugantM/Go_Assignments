@@ -45,7 +45,7 @@ func main() {
 
 
   fmt.Println("\n\n----Printing the backward linked list----\n")
-	//loop starts with pin(pointer) set to the head node, loop prints the value of the node untill the next of the node is pointing to nil
+	//loop starts with pin(pointer) set to the tail node, loop prints the value of the node untill the next of the node is pointing to nil
   fmt.Print(" | ")
 	for pin = tail; pin != nil; pin=pin.previous {
 		fmt.Print(pin.val," | ")
