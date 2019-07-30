@@ -3,8 +3,8 @@ package main
 import "github.com/fogleman/gg"
 
 func main() {
-    dc := gg.NewContext(1000, 1000)
-    dc.DrawCircle(500, 500, 200)
+    dc := gg.NewContext(16, 16)
+    dc.DrawCircle(4, 4, 2)
     dc.SetRGB(250, 5,155)
     dc.Fill()
     dc.SavePNG("out.png")
